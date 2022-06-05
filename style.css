@@ -1,40 +1,49 @@
-*{
+* {
     box-sizing: border-box;
-    
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
     background: url(/img/background.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    max-height: 800px;
-    padding: 50px 50px;
+    height: 60vh;
+    width: 100%;
 }
 
-body, input, button{
+body,
+input,
+button {
     font-family: Helvetica, sans-serif;
 }
 
-.container{
-    max-width: 980px; /* centralizando o conteúdo */    
-    margin: 0 auto;  /* centralizando o conteúdo */
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    padding-top: 130px;
-    padding-bottom: 200px;
-    
+input:focus {
+    outline: none;
 }
 
-.logo{
+.container {
+    width: 55%; /* centralizando o conteúdo */
+    height: 80vh;
+    margin: 0 auto; /* centralizando o conteúdo */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-width{
+    width: 100%;
+    margin: 0px 8px;
+}
+
+.logo {
     height: 106px;
     display: block;
     max-width: 100%;
 }
 
-h2{
+h2 {
     font-size: 28px;
     font-family: Helvetica, sans-serif;
     font-weight: bold;
@@ -42,19 +51,20 @@ h2{
     max-width: 500px;
 }
 
-form{
-    padding: 16px;
+form {
+    padding: 20px;
     opacity: 0.9;
     background: #fff;
-    border-radius: 16px 0px 16px 0px;;
-    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    border-radius: 5px;
 }
 
-input a, input, button{
+input a,
+input,
+button {
     display: block;
 }
 
-input{
+input {
     width: 100%;
     margin-bottom: 12px;
     padding: 16px;
@@ -62,17 +72,17 @@ input{
     border: 1px solid #dddfe2;
 }
 
-input [placeholder]{
+input [placeholder] {
     font-family: Helvetica, sans-serif;
 }
 
-input::placeholder{
+input::placeholder {
     font-size: 18px;
     color: #1d2129;
     opacity: 0.6;
 }
 
-form a{
+form a {
     text-align: center;
     display: block;
     margin-top: 16px 16px 24px 16px;
@@ -84,68 +94,61 @@ form a{
     margin-top: 15px;
 }
 
-form a:hover{
+form a:hover {
     text-decoration: underline;
 }
 
-.entrar, .criar-ct{
+.entrar,
+.criar-ct {
     font-weight: bold;
     color: white;
-    border-radius: 316px;
-    border-top-right-radius: 0;
+    border-radius: 6px;
     border: none;
     padding: 16px;
-    cursor:pointer;
+    cursor: pointer;
     text-align: center;
-    transition: 200ms cubic-bezier(.08, .52, .52, .1);
+    transition: 200ms cubic-bezier(0.08, 0.52, 0.52, 0.1);
 }
 
-.entrar{
+.entrar {
     font-size: 20px;
-    background: #FF4080;
+    background: #ff4080;
     width: 100%;
 }
 
-.entrar:hover{
-    background: #d87998;
+.entrar:hover {
+    background: #f11c63;
 }
 
-.criar-ct{
+.criar-ct {
     font-size: 17px;
     background: #d44575;
     margin: 0 auto;
     margin-top: 24px;
 }
 
-.criar-ct:hover{
-    background: #d87998;
+.criar-ct:hover {
+    background: #f11c63;
 }
 
-p{
+p {
     font-weight: bold;
     color: white;
 }
 
-p a{
-    color: rgb(0, 0, 0);
+p a {
+    color: rgb(32, 114, 221);
     font-size: 17px;
     text-decoration: none;
 }
 
-p a:hover{
-    color: rgb(255, 255, 255);
-    text-decoration: underline;
-}
-
-footer{
-    margin: -50px -50px;
+footer {
+    padding-top: 5em;
     position: relative;
-    top: 50px;
     text-align: center;
-    height: 300px;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    color: rgb(0, 0, 0);
+    color: #ffffff;
 }
